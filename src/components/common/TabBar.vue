@@ -68,7 +68,7 @@ export default {
   width: 100%;
   height: 49px;
   background-color: #f6f6f6;
-  bottom: 0px;
+  bottom: 0;
   box-shadow: 0px -2px 3px rgba(100, 100, 100, 0.25);
 }
 </style>
