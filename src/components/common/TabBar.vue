@@ -61,8 +61,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #tab-bar {
+  z-index: 10;
   display: flex;
   position: fixed;
   width: 100%;

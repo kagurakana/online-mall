@@ -4,7 +4,7 @@
       v-for="(item,index) in titles"
       :key="index"
       @click="itemClick(index)"
-      :class="{active:index===activeIndex}"
+      :class="{active:index==activeIndex}"
       class="tab-control-item"
     >
       <span>{{item}}</span>
@@ -18,7 +18,9 @@ export default {
   props: {
     titles: {
       type: Array,
-      default: []
+      default(){
+        return []
+      }
     }
   },
   data() {

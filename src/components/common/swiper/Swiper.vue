@@ -50,7 +50,9 @@ export default {
     this.handleDom()
     this.startTimer()
     window.onresize = ()=>{
+      if (this.$route.path.indexOf("home")!=-1){
       this.setSize()
+      }
     }
   },
   methods: {
@@ -150,7 +152,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #swiper{
 overflow: hidden;
 position: relative;

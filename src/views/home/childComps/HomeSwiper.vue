@@ -3,7 +3,7 @@
   <template v-slot:swiperItem>
   <swiper-item v-for="(item,index) in banners" :key="index">
     <a :href="item.link">
-      <img :src="item.image" alt="">
+      <img :src="item.image" @load="imgLoad" alt="">
     </a>
   </swiper-item>
   </template>
@@ -21,9 +21,24 @@ export default {
   props:{
     banners:{
       type:Array,
-      default:[]
+      default(){
+        return []
+      }
     }
-  }
+  },
+  data() {
+    return {
+      isLoad:false
+    }
+  },
+  methods: {
+    imgLoad(){
+      if (!this.isLoad) {
+      this.isLoad = !this.isLoad
+      this.$emit("homeSwaperImgLoad")
+      }
+    }
+  },
 };
 </script>
 
