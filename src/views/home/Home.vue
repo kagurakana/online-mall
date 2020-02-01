@@ -108,6 +108,7 @@ export default {
     });
   },
   activated() {
+    this.$refs.scroll.refresh()
     this.$refs.scroll.scrollTo(0,this.leftPosY,1)
   },
   deactivated() {

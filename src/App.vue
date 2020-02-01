@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- 除了detail之外的keepalive -->
     <keep-alive>
     <router-view/>
     </keep-alive>
