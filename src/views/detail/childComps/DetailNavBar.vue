@@ -1,5 +1,5 @@
 <template>
-  <NavBar>
+  <NavBar class="detail-nav">
     <template v-slot:left>
       <div @click="backClick">
         <img class="back-img" src="~assets/img/common/back.svg" alt="">
@@ -59,4 +59,10 @@ export default {
   width: 22px;
   vertical-align: middle;
 }
+.detail-nav{
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+}
+
 </style>

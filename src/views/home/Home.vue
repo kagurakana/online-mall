@@ -20,7 +20,6 @@
       @scrollPosition="contentScrolled"
       @pullUpLoad="loadMore"
     >
-      <template v-slot:scroll>
         <HomeSwiper 
         v-if="isHaveBannersData" 
         :banners="banners"
@@ -35,7 +34,6 @@
           :titles="['流行','新款','精选']"
         />
         <GoodList :goods="goods[currentGoodType].list" />
-      </template>
     </Scroll>
     <!-- 监听组件的事件需要native属性 -->
     <BackTop v-show="isShowBackTop" @click.native="backTop" class="back-top" />

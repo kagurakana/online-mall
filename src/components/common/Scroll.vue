@@ -1,12 +1,14 @@
+
 <template>
   <div class="scroll-container" ref="container">
     <div class="wrapper">
-      <slot name="scroll"></slot>
+      <slot></slot>
     </div>
   </div>
 </template>
 
 <script>
+
 import BScroll from "better-scroll";
 export default {
   name: "Scroll",
@@ -34,6 +36,7 @@ export default {
     });
   },
   methods: {
+
     scrollTo(x, y, time) {
       this.scroll.scrollTo(x, y, time);
     },

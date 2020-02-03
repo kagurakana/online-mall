@@ -63,7 +63,7 @@ margin: 8px;
 }
 .info-other{
     border-bottom: rgb(235, 235, 235) solid 3.5px;
-    padding: 5px 0;
+    padding:5px 0 10px 0;
     display: flex;
       justify-content: space-between;
 }
@@ -75,13 +75,12 @@ margin: 8px;
 }
 .info-service{
   font-size: 0.8rem;
-  padding: 10px 5px;
+  padding:10px 5px 15px 5px;
   display: flex;
   justify-content: space-between;
  border-bottom: rgb(235, 235, 235) solid 8px;
 }
 .info-service img{
 width:0.8rem;
-
 }
 </style>
